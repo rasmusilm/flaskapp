@@ -3,7 +3,7 @@ let i = 1;
 function getInfo() {
     let data = fetch("/api")
         .then(resp => resp.json())
-        .then(inf => info = inf).then(d => writeInfo(info));
+        .then(d => writeInfo(d));
 }
 
 function writeInfo(data) {
